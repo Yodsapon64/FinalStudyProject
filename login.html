@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In Page</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="Css/login.css">
 </head>
 <body>
     <div class="topbar">
@@ -18,27 +18,25 @@
             <li><a href="#">ข้อมูลวัคซีน</a></li>
         </ul>
     </div>
-    
-    <div class="container">
-        <div class="login-box">
-            <h2>Welcome To the website</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <form>
-                <div class="user-box">
-                    <input type="email" name="" required="">
-                    <label>Email</label>
-                </div>
-                <div class="user-box">
-                    <input type="password" name="" required="">
-                    <label>รหัสผ่าน</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox" name="remember"> Remember</label>
-                    <a href="#" class="forgot-password">Forgot password?</a>
-                </div>
-                <button type="submit" class="login-btn">เข้าสู่ระบบ</button>
-                <p class="create-account"><a href="#">สมัครสมาชิก</a></p>
-            </form>
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-left">
+                <img src="img/appointment.jpg" alt="Login Image">
+            </div>
+            <div class="login-right">
+                <h2>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h2>
+                <p>โปรดเข้าสู่ระบบเพื่อเข้าใช้บริการของเว็บเรา</p>
+                <form>
+                    <input type="text" name="first_name" placeholder="ชื่อ">
+                    <input type="text" name="last_name" placeholder="นามสกุล">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="รหัสผ่าน">
+                    <button type="submit" class="login-btn">เข้าสู่ระบบ</button>
+                    <button type="button" class="signup-btn" onclick="window.location.href='sign.html'">สมัครสมาชิก</button>
+                    <p><a href="#">ท่านลืมรหัสผ่านหรือไม่?</a></p>
+                </form>
+            </div>
         </div>
     </div>
 

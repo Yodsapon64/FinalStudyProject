@@ -1,22 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
-            <link rel="stylesheet" href="sign.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="Css/sign.css">
 </head>
 <body>
-            <div class="topbar">
-                        <div class="logo">
-                            <a href="index.html">เว็บแอปพลิเคชันสำหรับติดตามการเจริญเติบโตของเด็กอายุ 0-12 ปี</a>
-                        </div>
-                        <ul class="menu">
-                            <li><a href="index.html">หน้าหลัก</a></li>
-                            <li><a href="about.html">เกี่ยวกับเรา</a></li>
-                            <li><a href="#">ข้อมูลภาวะโภชนาการ</a></li>
-                            <li><a href="#">ข้อมูลวัคซีน</a></li>
-                        </ul>
+    <div class="topbar">
+        <div class="logo">
+            <a href="index.html">เว็บแอปพลิเคชันสำหรับติดตามการเจริญเติบโตของเด็กอายุ 0-12 ปี</a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">หน้าหลัก</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+            <li><a href="#">ข้อมูลภาวะโภชนาการ</a></li>
+            <li><a href="#">ข้อมูลวัคซีน</a></li>
+        </ul>
+    </div>
+
+    <div class="signup-container">
+        <div class="signup-card">
+            <div class="signup-left">
+                <img src="http://www.beechtreehouse.com/wp-content/uploads/2012/01/Preschool-Class.bmp" alt="Sign Up Image">
+            </div>
+            <div class="signup-right">
+                <h2>ลงทะเบียนสำหรับบัญชีใหม่</h2>
+                <p>สมัครสมาชิกเพื่อรับสิทธิประโยชน์แก่บุตรหลานของท่าน</p>
+                <form>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="parent_first_name" placeholder="ชื่อผู้ปกครอง" required>
+                    <input type="text" name="parent_last_name" placeholder="นามสกุลผู้ปกครอง" required>
+                    <input type="text" name="address" placeholder="ที่อยู่" required>
+                    <input type="tel" name="phone" placeholder="เบอร์โทร" pattern="[0-9]{10}" required>
+                    <input type="text" name="child_first_name" placeholder="ชื่อเด็ก" required>
+                    <input type="text" name="child_last_name" placeholder="นามสกุลเด็ก" required>
+                    <label for="dob">วันเกิดของเด็ก:</label>
+                    <div class="dob-container">
+                        <select name="dob-day" id="dob-day" required>
+                            <option value="">วัน</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="dob-month" id="dob-month" required>
+                            <option value="">เดือน</option>
+                            <option value="1">มกราคม</option>
+                            <option value="2">กุมภาพันธ์</option>
+                            <option value="3">มีนาคม</option>
+                            <option value="4">เมษายน</option>
+                            <option value="5">พฤษภาคม</option>
+                            <option value="6">มิถุนายน</option>
+                            <option value="7">กรกฎาคม</option>
+                            <option value="8">สิงหาคม</option>
+                            <option value="9">กันยายน</option>
+                            <option value="10">ตุลาคม</option>
+                            <option value="11">พฤศจิกายน</option>
+                            <option value="12">ธันวาคม</option>
+                        </select>
+                        <select name="dob-year" id="dob-year" required>
+                            <option value="">ปี</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
                     </div>
+                    <label for="gender">เพศ:</label>
+                    <select name="gender" required>
+                        <option value="male">ชาย</option>
+                        <option value="female">หญิง</option>
+                    </select>
+                    <input type="number" name="weight" placeholder="น้ำหนัก (กิโลกรัม)" step="0.1" min="0" required>
+                    <input type="number" name="height" placeholder="ส่วนสูง (เซนติเมตร)" step="0.1" min="0" required>
+                    <button type="submit" class="signup-btn">สมัครสมาชิก</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2024 เว็บแอปพลิเคชันสำหรับติดตามการเจริญเติบโตของเด็กอายุ 0-12 ปี. All rights reserved.</p>
+            <ul class="footer-menu">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

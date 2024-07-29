@@ -1,0 +1,127 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif; /* เพิ่มฟอนต์ให้ดูเป็นกันเองมากขึ้น */
+        }
+        
+        body {
+            background-color: #f5f5f5; /* เพิ่มสีพื้นหลังที่อ่อนโยน */
+        }
+        
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 14px;
+            background-color: rgb(54, 54, 54); /* ใช้สีที่ตั้งไว้ */
+            margin: 8px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .menu li {
+            margin-left: 20px;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .menu li a:hover {
+            color: #ff790b; /* ใช้สีที่ตั้งไว้ */
+        }
+
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1400px;
+            margin: auto;
+        }
+        
+        .footer-section {
+            margin: 20px;
+            flex: 1;
+        }
+        
+        .footer-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .footer-section p, .footer-section ul, .footer-section form {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #ff790b;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #e06805;
+        }
+        
+        .footer-section form input, .footer-section form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .footer-section form button {
+            background-color: #ff790b;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .footer-section form button:hover {
+            background-color: #e06805;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            background-color: #222;
+        }
